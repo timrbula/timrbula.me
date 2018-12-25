@@ -8,8 +8,8 @@ import Writing from '../sections/Writing';
 const IndexPage = () => (
   <Layout>
     <Landing />
-    <About />
-    <Projects />
+    {/* <About />
+    <Projects /> */}
     <Writing />
   </Layout>
 );
