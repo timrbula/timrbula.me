@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import RouteLink from './RouteLink';
-import Logo from './Logo/Portfolio.svg';
+import Logo from './Logo/Bananas.svg';
 
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
@@ -38,30 +38,14 @@ const formatLinks = allLinks =>
 const Header = () => (
   <HeaderContainer>
     <Fade top>
-      <Flex
-        flexWrap="wrap"
-        justifyContent="space-between"
-        alignItems="center"
-        p={3}
-      >
+      <Flex flexWrap="wrap" justifyContent="space-between" alignItems="center" p={3}>
         <SectionLinks>
           {({ allLinks }) => {
             const { home, links } = formatLinks(allLinks);
 
-            const homeLink = home && (
-              <Image
-                src={Logo}
-                width="50px"
-                alt="Portfolio Logo"
-                onClick={home.onClick}
-              />
-            );
+            const homeLink = home && <Image src={Logo} width="50px" alt="Portfolio Logo" onClick={home.onClick} />;
             const navLinks = links.map(({ name, value }) => (
-              <RouteLink
-                key={name}
-                onClick={value.onClick}
-                selected={value.selected}
-              >
+              <RouteLink key={name} onClick={value.onClick} selected={value.selected}>
                 {name}
               </RouteLink>
             ));

@@ -75,8 +75,8 @@ const parsePost = postFromGraphql => {
 const edgeToArray = data => data.edges.map(edge => edge.node);
 
 const Writing = () => (
-  <Section.Container id="writing" Background={Background}>
-    <Section.Header name="Writing" icon="✍️" label="writing" />
+  <Section.Container id="blog" Background={Background}>
+    <Section.Header name="Blog" icon="✍️" label="blog" />
     <StaticQuery
       query={graphql`
         query MediumPostQuery {

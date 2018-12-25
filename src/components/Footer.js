@@ -18,12 +18,12 @@ const FooterContainer = styled.footer`
 `;
 
 const RenponsiveLogo = styled.img`
-  width: 60px;
+  width: 200px;
   height: 15px;
 
   @media (min-width: 400px) {
-    width: 150px;
-    height: 35px;
+    width: 100px;
+    height: 20px;
   }
 `;
 
@@ -59,11 +59,6 @@ const Footer = () => (
       </span>
       <Flex justifyContent="center" alignItems="center">
         <Logo url="https://www.contentful.com/" logo={ContentfulLogo} alt="Powered by Contentful" />
-        <Text m={2} fontSize={4}>
-          <span role="img" aria-label="heart">
-            ❤️
-          </span>
-        </Text>
         <Logo url="https://www.gatsbyjs.org/" logo={GatsbyLogo} alt="Gatsby Logo" />
       </Flex>
     </Fade>

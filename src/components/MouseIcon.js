@@ -52,7 +52,7 @@ const Scroll = styled.circle`
 `;
 
 const MouseIcon = () => (
-  <SectionLink section="about">
+  <SectionLink section="blog">
     {({ onClick }) => (
       <ScrollLink onClick={onClick}>
         <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
