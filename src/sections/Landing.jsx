@@ -39,7 +39,7 @@ const LandingPage = () => (
         return (
           <>
             <Heading textAlign="center" is="h1" color="primary" fontSize={[5, 6, 8]} mb={[3, 4, 5]}>
-              {`Hello, I'm ${name}!`}
+              {`Hello, I'm ${name}`}
             </Heading>
 
             <Heading is="h2" color="primary" fontSize={[4, 5, 6]} mb={[2, 4]} textAlign="center">
