@@ -45,7 +45,7 @@ const LandingPage = () => (
             <Heading is="h2" color="primary" fontSize={[4, 5, 6]} mb={[2, 4]} textAlign="center">
               <TextLoop>
                 {roles.map(text => (
-                  <p style={{ width: 400 }} key={text}>
+                  <p style={{ width: '360px' }} key={text}>
                     {text}
                   </p>
                 ))}
