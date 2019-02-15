@@ -8,10 +8,9 @@ const LinkAnimated = styled.span`
   position: relative;
   margin-bottom: 0;
   padding-bottom: 5px;
-  color: inherit;
+  color: gray;
   border-bottom: ${props => `${props.borderWidth} solid transparent`};
-  border-bottom-color: ${props =>
-    props.selected && props.theme.colors.primaryLight};
+  border-bottom-color: ${props => props.selected && props.theme.colors.primaryDark};
   transition: 0.4s;
   scroll-behavior: smooth;
 
@@ -36,12 +35,7 @@ const LinkAnimated = styled.span`
 `;
 
 const RouteLink = ({ onClick, selected, children }) => (
-  <Label
-    ml={[2, 3]}
-    color="background"
-    fontSize={[2, 3]}
-    css={{ cursor: 'pointer' }}
-  >
+  <Label ml={[2, 3]} color="background" fontSize={[2, 3]} css={{ cursor: 'pointer' }}>
     <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
       {children}
     </LinkAnimated>
