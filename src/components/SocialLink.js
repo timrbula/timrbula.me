@@ -14,9 +14,9 @@ const IconLink = styled(Link)`
   }
 `;
 
-const SocialLink = ({ fontAwesomeIcon, name, url, color, hoverColor }) => (
+const SocialLink = ({ fontAwesomeIcon, name, url, color, hoverColor, isExternalLink }) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
-    <IconLink href={url} target="_blank" color={color} hover={hoverColor}>
+    <IconLink href={url} target={isExternalLink ? '_blank' : '_self'} color={color} hover={hoverColor}>
       <FontAwesome name={fontAwesomeIcon} />
     </IconLink>
   </Tooltip>
@@ -28,6 +28,7 @@ SocialLink.propTypes = {
   url: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   hoverColor: PropTypes.string.isRequired,
+  isExternalLink: PropTypes.bool.isRequired,
 };
 
 export default SocialLink;

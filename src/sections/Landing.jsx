@@ -7,16 +7,6 @@ import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
 
-const Background = () => (
-  <div>
-    <Triangle color="backgroundDark" height={['20vh', '20vh']} width={['100vw', '100vw']} />
-    {/* <Triangle color="secondary" height={['38vh', '80vh']} width={['50vw', '35vw']} />
-     */}
-    {/* <Triangle color="primaryDark" height={['20vh', '20vh']} width={['20vw', '50vw']} invertX /> */}
-    <Triangle color="backgroundDark" height={['20vh', '20vh']} width={['100vw', '100vw']} invertX invertY />
-  </div>
-);
-
 const LandingPage = () => (
   <Section.Container id="home">
     <StaticQuery
