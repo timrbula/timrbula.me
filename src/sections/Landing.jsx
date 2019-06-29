@@ -18,7 +18,7 @@ const Background = () => (
 );
 
 const LandingPage = () => (
-  <Section.Container id="home" Background={Background}>
+  <Section.Container id="home">
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {

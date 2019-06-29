@@ -8,7 +8,6 @@ import config from 'react-reveal/globals';
 import theme from '../theme';
 import Helmet from './Helmet';
 import Header from './Header';
-import Footer from './Footer';
 
 const GlobalStyle = createGlobalStyle`
   * { box-sizing: border-box; }
@@ -29,7 +28,6 @@ const Layout = ({ children }) => (
         <Helmet />
         <Header />
         {children}
-        <Footer />
       </ScrollingProvider>
     </RebassProvider>
   </>

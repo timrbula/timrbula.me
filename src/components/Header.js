@@ -10,9 +10,9 @@ import Logo from './Logo/Bananas.svg';
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
 const HeaderContainer = styled(Headroom)`
-  .headroom--pinned {
-    background: ${props => props.theme.colors.primaryDark};
-  }
+  // .headroom--pinned {
+  //   background: ${props => props.theme.colors.primaryDark};
+  // }
 
   position: absolute;
   width: 100%;
